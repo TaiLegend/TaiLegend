@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Workbench Việt–Trung: 从 Ascendant 到 VCT Pacific</title>
+<style>
+:root{--bg:#e8edf0;--surface:#f6f9fa;--ink:#13222b;--mute:#53656f;--line:#c3cfd6;--acc:#00857f;--warn:#b86e00;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1a20;--surface:#17252d;--ink:#e6eef2;--mute:#9bb0ba;--line:#2c4049;--acc:#2fd0c6;--warn:#f0b04a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f1a20;--surface:#17252d;--ink:#e6eef2;--mute:#9bb0ba;--line:#2c4049;--acc:#2fd0c6;--warn:#f0b04a;color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.55 system-ui,-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif}
+.wrap{max-width:920px;margin:0 auto;padding:20px 16px 56px}
+h1{font-size:clamp(1.8rem,6vw,2.8rem);line-height:1.15;margin:0 0 6px}
+h2{font-size:1.45rem;margin:30px 0 10px;padding-top:12px;border-top:2px solid var(--ink)}
+h3{font-size:1.05rem;margin:0 0 6px}
+.zh{display:block;color:var(--mute)}
+.lead{color:var(--mute)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}
+.box{background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--acc);padding:14px 16px;margin:0}
+.box.w{border-left-color:var(--warn)}
+.box p{margin:0 0 10px}
+.k{display:block;font-size:.85rem;color:var(--mute);margin-top:6px}
+.phase{background:var(--surface);border:1px solid var(--line);margin-bottom:12px}
+.phase header{padding:12px 16px;border-bottom:1px solid var(--line)}
+.phase ul{list-style:none;margin:0;padding:8px 16px 12px}
+label.ck{display:flex;gap:10px;align-items:flex-start;padding:5px 0;cursor:pointer}
+input[type=checkbox]{width:20px;height:20px;accent-color:var(--acc);margin-top:3px;flex:none}
+input:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;background:var(--surface);border:1px solid var(--line);min-width:520px}
+th,td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{font-size:.85rem;color:var(--mute)}
+td.t{white-space:nowrap;font-weight:600}
+.note{font-size:.9rem;color:var(--mute)}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Từ Ascendant đến VCT Pacific<span class="zh">从 Ascendant 到 VCT Pacific</span></h1>
+<p class="lead">Workbench cá nhân cho Duelist entry, bản song ngữ Việt–Trung.<span class="zh">突破手(决斗者)个人工作台,越中双语版。</span></p>
+
+<h2>Hồ sơ hiện tại<span class="zh">当前档案</span></h2>
+<div class="grid">
+<div class="box">
+<span class="k">Rank / 段位</span><p>Ascendant – Immortal+</p>
+<span class="k">Vai trò / 定位</span><p>Duelist (entry/fragger)<span class="zh">决斗者(突破手)</span></p>
+<span class="k">Mục tiêu / 目标</span><p>Tier 1: VCT Pacific<span class="zh">一线赛事:VCT Pacific</span></p></div>
+<div class="box">
+<span class="k">Quỹ thời gian / 可用时间</span><p>3–5 giờ mỗi ngày<span class="zh">每天 3–5 小时</span></p>
+<span class="k">Hoàn cảnh / 身份</span><p>Sinh viên, 18–22 tuổi<span class="zh">大学生,18–22 岁</span></p>
+<span class="k">Khung thời gian / 周期</span><p>Thực tế: 18–30 tháng<span class="zh">现实预估:18–30 个月</span></p></div>
+<div class="box w">
+<span class="k">Điểm yếu / 弱点</span><p>Aim và cơ học (crosshair, spray, flick)<span class="zh">瞄准与操作(准星、压枪、甩枪)</span></p>
+<span class="k">Rủi ro sức khỏe / 健康风险</span><p>Thức khuya, mỏi mắt, đau cổ tay/lưng/vai, ít vận động<span class="zh">熬夜、眼睛疲劳、手腕/背/肩疼痛、缺乏运动</span></p></div>
+</div>
+<p class="note" style="margin-top:12px">Rank ladder chỉ là cửa vào; đội Tier 1 nhìn kết quả thi đấu, độ ổn định và teamplay. Khung 18–30 tháng chỉ là ước lượng.<span class="zh">天梯段位只是入场券;一线战队更看重比赛成绩、稳定性和团队配合。18–30 个月仅为估算。</span></p>
+
+<h2>Lộ trình 4 giai đoạn<span class="zh">四个阶段路线图</span></h2>
+<div id="phases"></div>
+
+<h2>Một ngày luyện 4 giờ<span class="zh">每日 4 小时训练</span></h2>
+<div class="scroll"><table>
+<tr><th>Thời lượng / 时长</th><th>Việc / 内容</th><th>Cách làm / 做法</th></tr>
+<tr><td class="t">20'</td><td>Khởi động cơ tay<span class="zh">手部热身</span></td><td>Xoay, kéo giãn cổ tay, rồi tracking và flick chậm.<span class="zh">活动并拉伸手腕,再慢速练跟枪和甩枪。</span></td></tr>
+<tr><td class="t">40'</td><td>Aim có chủ đích<span class="zh">有目的的瞄准训练</span></td><td>2–3 bài flick, tracking, micro-adjust; ghi điểm; mỗi lần chỉ đổi một biến.<span class="zh">2–3 个甩枪/跟枪/微调练习;记录分数;每次只改一个变量。</span></td></tr>
+<tr><td class="t">30'</td><td>Duel entry<span class="zh">突破对枪</span></td><td>Deathmatch hoặc 1v1 custom: peek, swing, timing trade.<span class="zh">死斗或自定义 1v1:探身、摆枪、补枪时机。</span></td></tr>
+<tr><td class="t">1h30</td><td>Ranked hoặc scrim<span class="zh">排位或训练赛</span></td><td>Tối đa 2–3 trận, mỗi trận 1 mục tiêu; thua 2 trận liền thì nghỉ.<span class="zh">最多 2–3 局,每局 1 个目标;连输 2 局就休息。</span></td></tr>
+<tr><td class="t">40'</td><td>Xem lại VOD<span class="zh">复盘录像</span></td><td>3–5 round thua duel đầu round; ghi nguyên nhân.<span class="zh">看 3–5 个开局对枪失败的回合,记录原因。</span></td></tr>
+<tr><td class="t">10'</td><td>Kết thúc<span class="zh">收尾</span></td><td>Ghi nhật ký, giãn tay và vai, đứng dậy đi lại.<span class="zh">写日志,拉伸手和肩,起身走动。</span></td></tr>
+</table></div>
+
+<h2>Sức khỏe: giấc ngủ và thể chất<span class="zh">健康:睡眠与体能</span></h2>
+<div class="grid">
+<div class="box"><h3>Giấc ngủ<span class="zh">睡眠</span></h3>
+<p>Giờ ngủ và giờ dậy cố định, chênh không quá 1 giờ; mục tiêu 7–9 giờ.<span class="zh">固定起床和入睡时间,误差不超过 1 小时;目标 7–9 小时。</span></p>
+<p>Dừng ranked 60 phút trước khi ngủ; không dùng nước tăng lực buổi chiều tối.<span class="zh">睡前 60 分钟停止排位;傍晚后不喝能量饮料。</span></p></div>
+<div class="box"><h3>Mắt<span class="zh">眼睛</span></h3>
+<p>Quy tắc 20-20-20: cứ 20 phút nhìn xa 20 giây. Màn hình ngang tầm mắt, cách một sải tay.<span class="zh">20-20-20 法则:每 20 分钟远眺 20 秒。屏幕与视线平齐,距离约一臂。</span></p></div>
+<div class="box"><h3>Cổ tay, lưng, vai<span class="zh">手腕、背、肩</span></h3>
+<p>Khuỷu tay gập khoảng 90 độ, cổ tay thẳng; mỗi giờ đứng dậy 3–5 phút và giãn cơ.<span class="zh">手肘约 90 度,手腕保持平直;每小时起身 3–5 分钟并拉伸。</span></p>
+<p>Tê tay hoặc đau kéo dài thì giảm tải và đi khám.<span class="zh">手麻或疼痛持续,应减少训练量并就医。</span></p></div>
+<div class="box"><h3>Vận động<span class="zh">运动</span></h3>
+<p>Thứ 2 cardio nhẹ; thứ 4 sức mạnh lưng, vai, core; thứ 6 cardio kèm giãn cơ; chủ nhật nghỉ.<span class="zh">周一轻有氧;周三背/肩/核心力量;周五有氧加拉伸;周日休息。</span></p></div>
+</div>
+<p class="note">Đây là gợi ý chung, không thay thế tư vấn của bác sĩ.<span class="zh">以上为一般性建议,不能替代医生的意见。</span></p>
+
+<h2>Checklist hôm nay<span class="zh">今日清单</span></h2>
+<div id="daily"></div>
+<p class="note">Các ô được lưu trên trình duyệt này nếu có thể.<span class="zh">勾选状态会尽量保存在本浏览器中。</span></p>
+</div>
+<script>
+const PH=[
+["Giai đoạn 1: Nền tảng","阶段一:打基础","Tháng 0–3 / 第 0–3 个月",[["Cố định giờ ngủ 4 tuần liền","固定作息,坚持 4 周"],["Xây routine aim, chốt sens và crosshair","建立瞄准流程,确定灵敏度和准星"],["Ổn định ở Immortal, thắng duel đầu round tăng đều","稳定在 Immortal,开局对枪胜率稳步提高"],["Xem VOD ít nhất 4 buổi mỗi tuần","每周至少复盘 4 次录像"]]],
+["Giai đoạn 2: Chạm đỉnh ladder","阶段二:冲击天梯顶端","Tháng 3–9 / 第 3–9 个月",[["Lên Immortal cao hoặc Radiant","升到高段 Immortal 或 Radiant"],["Thành thạo 2–3 agent Duelist và pool map","熟练 2–3 个决斗者特工和地图池"],["Tìm 4–5 người cùng trình để scrim đều","找 4–5 名同水平队友固定练习赛"],["Lập hồ sơ clip, VOD và chỉ số","整理集锦、录像和数据档案"]]],
+["Giai đoạn 3: Thi đấu có tổ chức","阶段三:有组织比赛","Tháng 9–18 / 第 9–18 个月",[["Tham gia giải open, Tier 2–3","参加公开赛及二、三线赛事"],["Có kết quả cụ thể và thống kê entry","取得具体成绩和突破数据"],["Học vai trò trong hệ thống team","学习战队体系中的角色"],["Gửi hồ sơ và đi tryout","投递档案并参加试训"]]],
+["Giai đoạn 4: Cánh cửa Tier 1","阶段四:通往一线之门","Tháng 18–30 / 第 18–30 个月",[["Có suất thi đấu ổn định ở đội Tier 2 trở lên","在二线及以上战队获得稳定位置"],["Tryout hoặc được tuyển cho đội dự VCT Pacific","参加备战 VCT Pacific 战队的试训或被签约"],["Giữ sức khỏe thể chất, tinh thần và lịch nghỉ","保持身心健康并安排休息"],["Đánh giá lại lộ trình mỗi quý","每季度重新评估路线"]]]];
+const DAILY=[["Khởi động cơ tay 20 phút","手部热身 20 分钟"],["Aim có chủ đích 40 phút, ghi điểm","瞄准训练 40 分钟,记录分数"],["Duel entry 30 phút","突破对枪 30 分钟"],["Ranked/scrim, mỗi trận 1 mục tiêu","排位/训练赛,每局 1 个目标"],["Xem VOD 3–5 round thua duel","复盘 3–5 个对枪失败回合"],["Ghi nhật ký cuối ngày","睡前写训练日志"],["Ngủ đúng giờ, dừng ranked trước 60 phút","按时睡觉,睡前 60 分钟停止排位"]];
+function load(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}}
+function save(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+const row=(a,id,on)=>'<label class="ck"><input type="checkbox" data-k="'+id+'"'+(on?' checked':'')+'><span>'+a[0]+'<span class="zh">'+a[1]+'</span></span></label>';
+let pd=load('vz-phases',{});
+document.getElementById('phases').innerHTML=PH.map((p,i)=>'<div class="phase"><header><h3>'+p[0]+'<span class="zh">'+p[1]+'</span></h3><span class="note">'+p[2]+'</span></header><ul>'+p[3].map((m,j)=>'<li>'+row(m,i+'-'+j,pd[i+'-'+j])+'</li>').join('')+'</ul></div>').join('');
+document.getElementById('phases').addEventListener('change',e=>{pd[e.target.dataset.k]=e.target.checked;save('vz-phases',pd)});
+const today=new Date().toISOString().slice(0,10);
+let dd=load('vz-daily',{});if(dd.d!==today)dd={d:today,c:{}};
+document.getElementById('daily').innerHTML=DAILY.map((m,i)=>row(m,i,dd.c[i])).join('');
+document.getElementById('daily').addEventListener('change',e=>{dd.c[e.target.dataset.k]=e.target.checked;save('vz-daily',dd)});
+</script>
+</body>
+</html>
